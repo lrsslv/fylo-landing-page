@@ -1,0 +1,54 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #07043B;
+}
+
+header .menu {
+    padding: 65px 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .menu ul {
+    display: flex;
+    gap: 57px;
+}
+
+main {
+    padding: 65px 80px;
+    margin-top: 85px;
+    background-color: blueviolet;
+}
+
+main section {
+    display: flex;
+}
+
+section .inscricao {
+    background-color: #575988;
+}
+
+footer {
+    padding: 90px 80px;
+    display: flex;
+    background-color: #07043B;
+    color: #FFFFFF;
+    height: 390px;
+}
+
+footer:nth-child(2) {
+    margin-top: 80px;
+}
+
+footer a {
+    color: #FFFFFF;
+}
+
+footer nav {
+    display: flex;
+}
+
+footer nav ul {
+    padding: 20px;
+}
