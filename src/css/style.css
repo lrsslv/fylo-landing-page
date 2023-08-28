@@ -1,6 +1,17 @@
 body {
     font-family: 'Raleway', sans-serif;
     color: #07043B;
+    display: grid;
+    grid-template-areas: "header header"
+                         "main main"
+                         "footer footer";
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* HEADER */
+
+header {
+    grid-area: header;
 }
 
 header .menu {
@@ -15,10 +26,18 @@ header .menu ul {
     gap: 57px;
 }
 
+header .menu ul a:hover {
+    color: #6C9BFF;
+    transition: 0.2s;
+}
+
+/* MAIN */
+
 main {
+    grid-area: main;
     padding: 65px 80px;
     margin-top: 85px;
-    background-color: blueviolet;
+    background-color:  #575988;
 }
 
 main section {
@@ -29,7 +48,10 @@ section .inscricao {
     background-color: #575988;
 }
 
+/* FOOTER */
+
 footer {
+    grid-area: footer;
     padding: 90px 80px;
     display: flex;
     background-color: #07043B;
@@ -37,18 +59,60 @@ footer {
     height: 390px;
 }
 
-footer:nth-child(2) {
-    margin-top: 80px;
+footer .contato .logo {
+    width: 135px;
+    height: 40px;
+    margin-bottom: 35px;
 }
 
-footer a {
-    color: #FFFFFF;
+footer .contato .phone, footer .contato .email {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    gap: 0 16px;
 }
 
 footer nav {
     display: flex;
+    margin: 65px 220px;
 }
 
-footer nav ul {
-    padding: 20px;
+footer nav ul:nth-child(2) {
+    margin-left: 200px;
+}
+
+footer nav ul li {
+    margin: 16px;
+}
+
+footer nav ul li a{
+    color: #FFFFFF;
+
+    &:hover {
+        color: #6C9BFF;
+        transition: 0.2s;
+    }
+}
+
+footer .social-media {
+    display: flex;
+    margin-top: 65px;
+    gap: 12px;
+}
+
+footer .social-media a {
+    display: flex;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        color: #6C9BFF;
+        border: 1px solid #6C9BFF;
+        transition: 0.2s;
+    }
 }
