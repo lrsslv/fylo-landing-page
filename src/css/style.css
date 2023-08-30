@@ -1,24 +1,27 @@
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', 'Open Sans', sans-serif;
     color: #07043B;
-    display: grid;
+    /* display: grid;
     grid-template-areas: "header header"
                          "main main"
                          "footer footer";
     grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px; */
 }
 
 /* HEADER */
 
-header {
+/* header {
     grid-area: header;
-}
+} */
 
 header .menu {
     padding: 65px 80px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
 }
 
 header .menu ul {
@@ -33,30 +36,48 @@ header .menu ul a:hover {
 
 /* MAIN */
 
-main {
-    grid-area: main;
-    padding: 65px 80px;
+.container {
+    /* grid-area: main; */
     margin-top: 85px;
-    background-color:  #575988;
 }
 
-main section {
+.container section {
     display: flex;
 }
 
-section .inscricao {
+.container .submit {
     background-color: #575988;
+    padding: 100px 80px;
+    color: #FFFFFF;
+    justify-content: space-between;
+}
+
+.container .submit .text {
+    width: 500px;
+}
+
+.container .submit .text h2 {
+    margin-bottom: 15px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+}
+
+.container .submit .text p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
 }
 
 /* FOOTER */
 
 footer {
-    grid-area: footer;
+    /* grid-area: footer; */
     padding: 90px 80px;
     display: flex;
     background-color: #07043B;
     color: #FFFFFF;
     height: 390px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
 }
 
 footer .contato .logo {
@@ -96,7 +117,7 @@ footer nav ul li a{
 
 footer .social-media {
     display: flex;
-    margin-top: 65px;
+    margin-top: 85px;
     gap: 12px;
 }
 
