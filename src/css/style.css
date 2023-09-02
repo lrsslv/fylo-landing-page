@@ -49,11 +49,112 @@ header .menu ul a:hover {
 
 .container section {
     display: flex;
+    padding: 90px 80px;
+}
+
+.container .functions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .functions .text {
+    width: 620px;
+}
+
+.container .functions h2 {
+    color: #07043B;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 150%;
+    margin-bottom: 15px;
+}
+
+.container .functions p {
+    color: #07043B;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 141.176%;
+    letter-spacing: 0.531px;
+    margin-bottom: 25px;
+}
+
+.container .functions form {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+
+    & .enter-email {
+        width: 480px;
+        height: 50px;
+        padding-left: 20px;
+        border: 1px solid #07043B;
+        border-radius: 3px;
+        box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
+
+        &::placeholder {
+            color: #C0C0C0;
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.45rem;
+        }
+    }
+
+    & .btn-top {
+        background-color: #2F65F8;
+        color: #FFFFFF;
+        width: 200px;
+        height: 50px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        border: none;
+        border-radius: 3px;
+        box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.16);
+
+        &:hover {
+            background-color: #6C9BFF;
+            cursor: pointer;
+            transition: 0.2s ease-in-out;
+        }
+    }
 }
 
 .container .objetivos {
     display: flex;
     justify-content: space-between;
+}
+
+.container .objetivos h2 {
+    color: #07043B;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.container .objetivos p {
+    color: #07043B;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+}
+
+.container .objetivos a {
+    display: flex;
+    max-width: fit-content;
+    color: #3DA08F;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: 1px solid #3DA08F;
+    padding: 5px 0;
+}
+
+.container .objetivos a img {
+    display: inline-block;
+    margin-top: 5px;
 }
 
 .container .objetivos .quote {
@@ -64,6 +165,7 @@ header .menu ul a:hover {
     padding: 25px 35px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px 5px rgba(56, 56, 56, 0.05);
+
     & .aspas {
         margin-bottom: 16px;
     }
@@ -83,6 +185,11 @@ header .menu ul a:hover {
     & :last-child {
         font-size: 1rem;
     }
+}
+
+.container .objetivos .image {
+    width: 85%;
+    justify-content: flex-end;
 }
 
 .container .submit {
