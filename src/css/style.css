@@ -201,12 +201,12 @@ header .menu ul a:hover {
     display: flex;
     align-items: center;
     margin-top: 16px;
-    margin-right: 8px;
 
     & figcaption {
         display: flex;
         flex-direction: column;
         line-height: normal;
+        margin-left: 8px;
 
         & :first-child {
             font-weight: 700;
