@@ -5,7 +5,6 @@ html {
 body {
     width: 100%;
     font-family: 'Raleway', 'Open Sans', sans-serif;
-    background: url(../svgs/round-background-desktop.svg) no-repeat center;
 }
 
 /* HEADER */
@@ -47,10 +46,9 @@ header .menu ul a:hover {
 .container .functions {
     display: flex;
     justify-content: space-between;
-    background: url(../images/illustration_1-01.png) no-repeat center right;
-    background-size: contain;
-    margin-right: 80px;
-    margin-bottom: 130px;
+    align-items: center;
+    margin-bottom: 70px;
+    gap: 30px;
 }
 
 .container .functions .text {
@@ -114,18 +112,23 @@ header .menu ul a:hover {
     }
 }
 
+.container .functions img {
+    width: 50%;
+    height: 50%;
+}
+
 /*SECTION 2*/
 
 .container .objetivos {
     display: flex;
-    flex-direction: column;
-    background: url(../images/illustration_2-01.png) no-repeat center right;
-    background-size: auto;
-    margin-right: 80px;
+    justify-content: space-between;
+    background: url(../svgs/round-background-desktop.svg) no-repeat top;
+    gap: 30px;
 }
 
 .container .objetivos .texto {
     width: 645px;
+    margin-top: 70px;
 }
 
 .container .objetivos h2 {
@@ -150,18 +153,19 @@ header .menu ul a:hover {
 
 .container .objetivos .see-how {
     display: flex;
+    align-items: center;
     max-width: fit-content;
-    border-bottom: 1px solid #3DA08F;
+    color: #3DA08F;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
 
-    & a {
-        color: #3DA08F;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 1.5rem;
-        font-weight: 400;
-        padding: 0 5px;
+    & span {
+        border-bottom: 1px solid #3DA08F;
     }
     & img {
-        margin-top: 3px;
+        margin-left: 3px;
+        margin-bottom: -3px;
     }
     & :hover {
         opacity: 0.7;
@@ -203,6 +207,13 @@ header .menu ul a:hover {
             font-size: 1rem;
         }
     }
+}
+
+.container .objetivos .illustration {
+    width: 50%;
+    height: 50%;
+    align-self: center;
+    margin-top: 70px;
 }
 
 /*SECTION 3*/
