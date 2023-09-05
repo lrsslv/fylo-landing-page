@@ -5,20 +5,10 @@ html {
 body {
     width: 100%;
     font-family: 'Raleway', 'Open Sans', sans-serif;
-    display: grid;
-    grid-template-areas: "header header"
-        "main main"
-        "footer footer";
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 20px;
     background: url(../svgs/round-background-desktop.svg) no-repeat center;
 }
 
 /* HEADER */
-
-header {
-    grid-area: header;
-}
 
 header .menu {
     padding: 65px 80px 0;
@@ -41,10 +31,9 @@ header .menu ul a:hover {
     transition: 0.2s;
 }
 
-/* MAIN */
+/* MAIN - 3 SECTIONS */
 
 .container {
-    grid-area: main;
     margin-top: 85px;
 }
 
@@ -52,6 +41,8 @@ header .menu ul a:hover {
     display: flex;
     padding: 90px 80px;
 }
+
+/*SECTION 1*/
 
 .container .functions {
     display: flex;
@@ -63,20 +54,19 @@ header .menu ul a:hover {
 }
 
 .container .functions .text {
-    width: 50%;
+    width: 625px;
+    color: #07043B;
 }
 
 .container .functions h2 {
-    color: #07043B;
     font-family: 'Raleway', sans-serif;
-    font-size: 3.5rem;
+    font-size: 3.8rem;
     font-weight: 700;
     line-height: 150%;
     margin-bottom: 15px;
 }
 
 .container .functions p {
-    color: #07043B;
     width: 95%;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
@@ -89,17 +79,15 @@ header .menu ul a:hover {
 .container .functions form {
     display: flex;
     align-items: flex-start;
-    width: 86%;
     gap: 16px;
 
     & .enter-email {
-        width: 480px;
+        width: 300px;
         height: 50px;
         padding-left: 20px;
         border: 1px solid #07043B;
         border-radius: 3px;
         box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
-
         &::placeholder {
             color: #C0C0C0;
             font-family: 'Raleway', sans-serif;
@@ -118,7 +106,6 @@ header .menu ul a:hover {
         border: none;
         border-radius: 3px;
         box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.16);
-
         &:hover {
             background-color: #6C9BFF;
             cursor: pointer;
@@ -126,6 +113,8 @@ header .menu ul a:hover {
         }
     }
 }
+
+/*SECTION 2*/
 
 .container .objetivos {
     display: flex;
@@ -136,13 +125,13 @@ header .menu ul a:hover {
 }
 
 .container .objetivos .texto {
-    width: 55%;
+    width: 645px;
 }
 
 .container .objetivos h2 {
     color: #07043B;
     font-family: 'Raleway', sans-serif;
-    font-size: 3.5rem;
+    font-size: 3.8rem;
     font-weight: 700;
     line-height: 150%;
     margin-bottom: 15px;
@@ -150,7 +139,7 @@ header .menu ul a:hover {
 
 .container .objetivos .texto p {
     color: #07043B;
-    width: 90%;
+    width: 85%;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
@@ -171,11 +160,9 @@ header .menu ul a:hover {
         font-weight: 400;
         padding: 0 5px;
     }
-
     & img {
         margin-top: 3px;
     }
-
     & :hover {
         opacity: 0.7;
     }
@@ -183,7 +170,7 @@ header .menu ul a:hover {
 
 .container .objetivos .quote {
     background-color: #FFF;
-    width: 32%;
+    width: 350px;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3rem;
     line-height: 177%;
@@ -212,23 +199,20 @@ header .menu ul a:hover {
             font-weight: 700;
             font-size: 1.1rem;
         }
-
         & :last-child {
             font-size: 1rem;
         }
     }
 }
 
-.container .objetivos .image {
-    width: 85%;
-    justify-content: flex-end;
-}
+/*SECTION 3*/
 
 .container .submit {
     background-color: #575988;
     padding: 100px 80px;
     color: #FFFFFF;
     justify-content: space-between;
+    gap: 20px
 }
 
 .container .submit .text {
@@ -246,6 +230,8 @@ header .menu ul a:hover {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 1.47rem;
+    line-height: 150%;
+    letter-spacing: 0.5px;
 }
 
 .container .submit form {
@@ -257,10 +243,10 @@ header .menu ul a:hover {
     & .enter-email {
         width: 480px;
         height: 50px;
+        padding-left: 20px;
         border: none;
         border-radius: 3px;
         box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.16);
-
         &::placeholder {
             color: #C0C0C0;
             font-family: 'Raleway', sans-serif;
@@ -279,7 +265,6 @@ header .menu ul a:hover {
         border: none;
         border-radius: 3px;
         box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.16);
-
         &:hover {
             background-color: #6C9BFF;
             cursor: pointer;
@@ -291,8 +276,6 @@ header .menu ul a:hover {
 /* FOOTER */
 
 footer {
-    grid-area: footer;
-    padding: 90px 80px;
     display: flex;
     background-color: #07043B;
     color: #FFFFFF;
@@ -300,6 +283,7 @@ footer {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 1.47rem;
+    padding: 90px 80px;
 }
 
 footer .contato .logo {
