@@ -1,10 +1,10 @@
-@media(max-width: 700px) {
+@media(max-width: 500px) {
     body {
-        width: 320px;
+        width: max-content;
         display: flex;
         flex-direction: column;
-        justify-content: center;
     }
+
     /* HEADER */
     header .menu {
         padding: 24px;
@@ -14,6 +14,7 @@
         width: 80px;
         height: 24px;
     }
+
     header .menu ul {
         display: flex;
         gap: 24px;
@@ -23,7 +24,7 @@
     /* MAIN - 3 SECTIONS */
 
     .container {
-        margin-top: 70px;
+        margin-top: 50px;
     }
 
     .container section {
@@ -36,13 +37,14 @@
     .container .functions {
         display: flex;
         flex-direction: column-reverse;
-        align-items: center;
+        justify-content: center;
         margin-bottom: 70px;
         gap: 0;
     }
 
     .container .functions .text {
         width: 320px;
+        justify-content: center;
     }
 
     .container .functions h2 {
@@ -172,12 +174,12 @@
     .container .submit {
         flex-direction: column;
         justify-content: center;
-        width: 320px;
         gap: 24px;
-        padding: 24px;
+        padding: 54px 24px;
     }
 
     .container .submit .text {
+        width: 320px;
         width: 280px;
     }
 
@@ -215,7 +217,6 @@
     /* FOOTER */
 
     footer {
-        width: 320px;
         flex-direction: column;
         height: fit-content;
         font-size: 16px;
