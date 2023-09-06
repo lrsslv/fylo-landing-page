@@ -1,5 +1,10 @@
 @media(max-width: 700px) {
-
+    body {
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     /* HEADER */
     header .menu {
         padding: 24px;
@@ -9,8 +14,14 @@
         width: 80px;
         height: 24px;
     }
+    header .menu ul {
+        display: flex;
+        gap: 24px;
+        font-size: 12px;
+    }
 
     /* MAIN - 3 SECTIONS */
+
     .container {
         margin-top: 70px;
     }
@@ -27,6 +38,7 @@
         flex-direction: column-reverse;
         align-items: center;
         margin-bottom: 70px;
+        gap: 0;
     }
 
     .container .functions .text {
@@ -107,6 +119,7 @@
     .container .objetivos .see-how {
         display: flex;
         font-size: 12px;
+
         & img {
             width: 12px;
         }
@@ -118,6 +131,7 @@
         font-size: 10px;
         line-height: 18px;
         padding: 25px;
+
         & .aspas {
             display: flex;
             margin-bottom: 5px;
@@ -129,14 +143,18 @@
         display: flex;
         align-items: center;
         margin-top: 12px;
+
         & img {
             width: 24px;
         }
+
         & figcaption {
             margin-left: 3px;
+
             & :first-child {
                 font-size: 9px;
             }
+
             & :last-child {
                 font-size: 6px;
             }
@@ -147,6 +165,89 @@
         width: 320px;
         height: 241px;
         align-self: auto;
+    }
+
+    /*SECTION 3*/
+
+    .container .submit {
+        flex-direction: column;
+        justify-content: center;
+        width: 320px;
+        gap: 24px;
+        padding: 24px;
+    }
+
+    .container .submit .text {
+        width: 280px;
+    }
+
+    .container .submit .text h2 {
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .container .submit .text p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .container .submit form {
+        align-items: center;
+
+        & .enter-email {
+            width: 240px;
+            height: 32px;
+            padding-left: 8px;
+
+            &::placeholder {
+                font-size: 10px;
+            }
+        }
+
+        & .btn-bottom {
+            width: 240px;
+            height: 32px;
+            font-size: 10px;
+        }
+    }
+
+    /* FOOTER */
+
+    footer {
+        width: 320px;
+        flex-direction: column;
+        height: fit-content;
+        font-size: 16px;
+        padding: 65px 40px;
+    }
+
+    footer .contato .logo {
+        width: 105px;
+        height: 30px;
+        margin-bottom: 35px;
+    }
+
+    footer nav {
+        display: flex;
+        flex-direction: column;
+        margin: 0 -14px;
+    }
+
+    footer nav ul:nth-child(2) {
+        margin-left: 0;
+    }
+
+    footer .social-media {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        gap: 10px;
+    }
+
+    footer .social-media a {
+        width: 27px;
+        height: 27px;
     }
 
 }

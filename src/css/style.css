@@ -86,6 +86,7 @@ header .menu ul a:hover {
         border: 1px solid #07043B;
         border-radius: 3px;
         box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
+
         &::placeholder {
             color: #C0C0C0;
             font-family: 'Raleway', sans-serif;
@@ -104,6 +105,7 @@ header .menu ul a:hover {
         border: none;
         border-radius: 3px;
         box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.16);
+
         &:hover {
             background-color: #6C9BFF;
             cursor: pointer;
@@ -163,10 +165,12 @@ header .menu ul a:hover {
     & span {
         border-bottom: 1px solid #3DA08F;
     }
+
     & img {
         margin-left: 3px;
         margin-bottom: -3px;
     }
+
     & :hover {
         opacity: 0.7;
     }
@@ -203,6 +207,7 @@ header .menu ul a:hover {
             font-weight: 700;
             font-size: 1.1rem;
         }
+
         & :last-child {
             font-size: 1rem;
         }
@@ -219,6 +224,7 @@ header .menu ul a:hover {
 /*SECTION 3*/
 
 .container .submit {
+    display: flex;
     background-color: #575988;
     padding: 100px 80px;
     color: #FFFFFF;
@@ -258,6 +264,7 @@ header .menu ul a:hover {
         border: none;
         border-radius: 3px;
         box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.16);
+
         &::placeholder {
             color: #C0C0C0;
             font-family: 'Raleway', sans-serif;
@@ -276,6 +283,7 @@ header .menu ul a:hover {
         border: none;
         border-radius: 3px;
         box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.16);
+
         &:hover {
             background-color: #6C9BFF;
             cursor: pointer;
