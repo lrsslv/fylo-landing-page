@@ -98,7 +98,8 @@
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
-        background: url(../svgs/round-background-mobile.svg) no-repeat top cover;
+        background: url(../svgs/round-background-mobile.svg) no-repeat top;
+        background-size: cover;
     }
 
     .container .objetivos .texto {
@@ -126,9 +127,9 @@
     }
 
     .container .objetivos .see-how {
-        display: inline-block;
-        text-align: center;
         font-size: 12px;
+        width: 100%;
+        margin: auto;
   
         & img {
             width: 12px;
