@@ -1,8 +1,9 @@
-@media(max-width: 700px) {
+@media(max-width: 800px) {
     body {
-        width: max-content;
+        width: 100%;
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 
     /* HEADER */
@@ -97,14 +98,14 @@
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
-        background: url(../svgs/round-background-mobile.svg) no-repeat top;
+        background: url(../svgs/round-background-mobile.svg) no-repeat top cover;
     }
 
     .container .objetivos .texto {
         width: 320px;
-        margin-top: 70px;
+        margin: 70px auto 40px auto;
         & :nth-child(3){
-            margin: -12px 0 30px;
+            margin: -30px 0 20px 0;
         }
     }
 
@@ -173,9 +174,9 @@
     }
 
     .container .objetivos .illustration {
-        width: 100%;
+        width: 320px;
         height: 241px;
-        align-self: auto;
+        margin: 90px auto 0 auto;
     }
 
     /*SECTION 3*/
