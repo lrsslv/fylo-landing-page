@@ -23,14 +23,14 @@
 
     /* MAIN - 3 SECTIONS */
 
-    .container section {
+    main section {
         display: flex;
         padding: 24px;
     }
 
     /*SECTION 1*/
 
-    .container .functions {
+    main .functions {
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
@@ -38,17 +38,17 @@
         gap: 0;
     }
 
-    .container .functions .text {
+    main .functions .text {
         width: 320px;
         justify-content: center;
     }
 
-    .container .functions h2 {
+    main .functions h2 {
         text-align: center;
         margin-bottom: 0;
     }
 
-    .container .functions p {
+    main .functions p {
         text-align: center;
         justify-content: center;
         font-size: 14px;
@@ -57,7 +57,7 @@
         margin: 24px auto 32px auto;
     }
 
-    .container .functions form {
+    main .functions form {
         display: flex;
         margin: auto;
         flex-direction: column;
@@ -80,7 +80,7 @@
         }
     }
 
-    .container .functions img {
+    main .functions img {
         width: 304px;
         height: 225px;
         margin-bottom: 30px;
@@ -88,7 +88,7 @@
 
     /*SECTION 2*/
 
-    .container .objetivos {
+    main .objetivos {
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
@@ -96,7 +96,7 @@
         background-size: cover;
     }
 
-    .container .objetivos .texto {
+    main .objetivos .texto {
         width: 320px;
         margin: 70px auto 40px auto;
         & :nth-child(3){
@@ -104,12 +104,12 @@
         }
     }
 
-    .container .objetivos h2 {
+    main .objetivos h2 {
         text-align: center;
         font-size: 16px;
     }
 
-    .container .objetivos .texto p {
+    main .objetivos .texto p {
         width: 100%;
         color: #615F7E;
         text-align: center;
@@ -120,7 +120,7 @@
         padding: 5px;
     }
 
-    .container .objetivos .see-how {
+    main .objetivos .see-how {
         font-size: 12px;
         width: 100%;
         margin: auto;
@@ -130,7 +130,7 @@
         }
     }
 
-    .container .objetivos .quote {
+    main .objetivos .quote {
         width: 280px;
         height: 170px;
         font-size: 10px;
@@ -146,7 +146,7 @@
         }
     }
 
-    .container .objetivos .quote figure {
+    main .objetivos .quote figure {
         display: flex;
         align-items: center;
         margin-top: 12px;
@@ -168,7 +168,7 @@
         }
     }
 
-    .container .objetivos .illustration {
+    main .objetivos .illustration {
         width: 320px;
         height: 241px;
         margin: 90px auto 0 auto;
@@ -176,30 +176,30 @@
 
     /*SECTION 3*/
 
-    .container .submit {
+    main .submit {
         flex-direction: column;
         justify-content: center;
         padding: 54px 24px;
     }
 
-    .container .submit .text {
+    main .submit .text {
         width: 320px;
         width: 280px;
         align-self: center;
     }
 
-    .container .submit .text h2 {
+    main .submit .text h2 {
         font-size: 18px;
         line-height: 24px;
         text-align: center;
     }
 
-    .container .submit .text p {
+    main .submit .text p {
         font-size: 14px;
         text-align: center;
     }
 
-    .container .submit form {
+    main .submit form {
         align-items: center;
 
         & .enter-email {

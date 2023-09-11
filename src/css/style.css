@@ -32,18 +32,18 @@ header .menu ul a:hover {
 
 /* MAIN - 3 SECTIONS */
 
-.container {
+main {
     margin-top: clamp(5rem, 6.3vw, 8.5rem);
 }
 
-.container section {
+main section {
     display: flex;
     padding: 90px 80px;
 }
 
 /*SECTION 1*/
 
-.container .functions {
+main .functions {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,12 +51,12 @@ header .menu ul a:hover {
     gap: 30px;
 }
 
-.container .functions .text {
+main .functions .text {
     width: 625px;
     color: #07043B;
 }
 
-.container .functions h2 {
+main .functions h2 {
     font-family: 'Raleway', sans-serif;
     font-size: clamp(2.4rem, 2.5vw , 3.8rem);
     font-weight: 700;
@@ -64,7 +64,7 @@ header .menu ul a:hover {
     margin-bottom: 15px;
 }
 
-.container .functions p {
+main .functions p {
     width: 95%;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
@@ -74,7 +74,7 @@ header .menu ul a:hover {
     margin-bottom: 25px;
 }
 
-.container .functions form {
+main .functions form {
     display: flex;
     align-items: flex-start;
     gap: 16px;
@@ -114,14 +114,14 @@ header .menu ul a:hover {
     }
 }
 
-.container .functions img {
+main .functions img {
     width: 45%;
     height: 45%;
 }
 
 /*SECTION 2*/
 
-.container .objetivos {
+main .objetivos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -129,19 +129,19 @@ header .menu ul a:hover {
     background: url(../images/round-background-desktop.svg) no-repeat top;
     background-size: cover;
     gap: 30px;
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse; */
 }
 
-.container .objetivos .global{
+main .objetivos .global{
     order: 1;
 }
 
-.container .objetivos .texto {
+main .objetivos .texto {
     width: 645px;
     margin-top: 70px;
 }
 
-.container .objetivos h2 {
+main .objetivos h2 {
     color: #07043B;
     font-family: 'Raleway', sans-serif;
     font-size: clamp(1.6rem, 2.7vw, 3.8rem);
@@ -150,7 +150,7 @@ header .menu ul a:hover {
     margin-bottom: 15px;
 }
 
-.container .objetivos .texto p {
+main .objetivos .texto p {
     color: #07043B;
     width: 85%;
     font-family: 'Open Sans', sans-serif;
@@ -161,7 +161,7 @@ header .menu ul a:hover {
     margin-bottom: 25px;
 }
 
-.container .objetivos .see-how {
+main .objetivos .see-how {
     display: flex;
     align-items: center;
     max-width: fit-content;
@@ -184,7 +184,7 @@ header .menu ul a:hover {
     }
 }
 
-.container .objetivos .quote {
+main .objetivos .quote {
     background-color: #FFF;
     width: 350px;
     font-family: 'Open Sans', sans-serif;
@@ -200,7 +200,7 @@ header .menu ul a:hover {
     }
 }
 
-.container .objetivos .quote figure {
+main .objetivos .quote figure {
     display: flex;
     align-items: center;
     margin-top: 16px;
@@ -222,7 +222,7 @@ header .menu ul a:hover {
     }
 }
 
-.container .objetivos .illustration {
+main .objetivos .illustration {
     width: 40%;
     height: 40%;
     order: 0;
@@ -230,7 +230,7 @@ header .menu ul a:hover {
 
 /*SECTION 3*/
 
-.container .submit {
+main .submit {
     display: flex;
     background-color: #575988;
     padding: 100px 80px;
@@ -239,18 +239,18 @@ header .menu ul a:hover {
     gap: 20px
 }
 
-.container .submit .text {
+main .submit .text {
     width: 500px;
 }
 
-.container .submit .text h2 {
+main .submit .text h2 {
     margin-bottom: 15px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 2.5rem;
 }
 
-.container .submit .text p {
+main .submit .text p {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 1.47rem;
@@ -258,7 +258,7 @@ header .menu ul a:hover {
     letter-spacing: 0.5px;
 }
 
-.container .submit form {
+main .submit form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
