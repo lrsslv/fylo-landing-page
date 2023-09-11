@@ -126,7 +126,7 @@ header .menu ul a:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background: url(../svgs/round-background-desktop.svg) no-repeat top;
+    background: url(../images/round-background-desktop.svg) no-repeat top;
     background-size: cover;
     gap: 30px;
     flex-direction: row-reverse;
