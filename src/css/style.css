@@ -48,7 +48,7 @@ main .functions {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 70px;
-    gap: 30px;
+    gap: clamp(0.0rem, 2.5vw, 1.9rem);
 }
 
 main .functions .text {
@@ -61,22 +61,22 @@ main .functions h2 {
     font-size: clamp(2.4rem, 2.5vw , 3.8rem);
     font-weight: 700;
     line-height: 150%;
-    margin-bottom: 15px;
+    margin-bottom: clamp(0.0rem, 3.5vw, 1rem);
 }
 
 main .functions p {
     width: 95%;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
+    font-size:  clamp(0.9rem, 4vw, 1.5rem);
     font-weight: 400;
-    line-height: 141.176%;
+    line-height: 24px;
     letter-spacing: 0.531px;
     margin-bottom: 25px;
 }
 
 main .functions form {
     display: flex;
-    align-items: flex-start;
+    align-items: flex-start;        
     gap: 16px;
 
     & .enter-email {
@@ -90,7 +90,7 @@ main .functions form {
         &::placeholder {
             color: #C0C0C0;
             font-family: 'Raleway', sans-serif;
-            font-size: 1.45rem;
+            font-size:clamp(0.7rem, 3.5vw, 1.45rem);
         }
     }
 
@@ -100,7 +100,7 @@ main .functions form {
         width: 200px;
         height: 50px;
         font-family: 'Raleway', sans-serif;
-        font-size: 1.5rem;
+        font-size: clamp(0.9rem, 3.5vw, 1.5rem);
         font-weight: 700;
         border: none;
         border-radius: 3px;
@@ -154,7 +154,7 @@ main .objetivos .texto p {
     color: #07043B;
     width: 85%;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
+    font-size: clamp(0.9rem, 4vw, 1.5rem);
     font-weight: 400;
     line-height: 141.176%;
     letter-spacing: 0.531px;
@@ -188,7 +188,7 @@ main .objetivos .quote {
     background-color: #FFF;
     width: 350px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.3rem;
+    font-size: clamp(0.5, 4vw, 1.3rem);
     line-height: 177%;
     padding: 25px 35px;
     border-radius: 5px;
@@ -213,11 +213,11 @@ main .objetivos .quote figure {
 
         & :first-child {
             font-weight: 700;
-            font-size: 1.1rem;
+            font-size: clamp(0.4rem, 2.5vw, 1.1rem);
         }
 
         & :last-child {
-            font-size: 1rem;
+            font-size: clamp(0.2rem, 2vw, 1rem);
         }
     }
 }
@@ -247,13 +247,13 @@ main .submit .text h2 {
     margin-bottom: 15px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: clamp(1.5rem, 5.5vw, 2.5rem);
 }
 
 main .submit .text p {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
-    font-size: 1.47rem;
+    font-size: clamp(0.7rem, 4vw, 1.47rem);
     line-height: 150%;
     letter-spacing: 0.5px;
 }
@@ -275,7 +275,7 @@ main .submit form {
         &::placeholder {
             color: #C0C0C0;
             font-family: 'Raleway', sans-serif;
-            font-size: 1.45rem;
+            font-size: clamp(0.4rem, 3vw, 1.45rem);
         }
     }
 
@@ -285,7 +285,7 @@ main .submit form {
         width: 200px;
         height: 50px;
         font-family: 'Raleway', sans-serif;
-        font-size: 1.5rem;
+        font-size: clamp(0.4rem, 3.5vw, 1.5rem);
         font-weight: 700;
         border: none;
         border-radius: 3px;

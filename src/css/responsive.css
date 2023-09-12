@@ -34,8 +34,6 @@
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
-        margin-bottom: 70px;
-        gap: 0;
     }
 
     main .functions .text {
@@ -45,13 +43,11 @@
 
     main .functions h2 {
         text-align: center;
-        margin-bottom: 0;
     }
 
     main .functions p {
         text-align: center;
         justify-content: center;
-        font-size: 14px;
         line-height: 21px;
         letter-spacing: normal;
         margin: 24px auto 32px auto;
@@ -68,7 +64,6 @@
             height: 40px;
 
             &::placeholder {
-                font-size: 12px;
                 letter-spacing: 0.4px;
             }
         }
@@ -76,7 +71,6 @@
         & .btn-top {
             width: 304px;
             height: 40px;
-            font-size: 14px;
         }
     }
 
@@ -99,21 +93,20 @@
     main .objetivos .texto {
         width: 320px;
         margin: 70px auto 40px auto;
-        & :nth-child(3){
+
+        & :nth-child(3) {
             margin: -30px 0 20px 0;
         }
     }
 
     main .objetivos h2 {
         text-align: center;
-        font-size: 16px;
     }
 
     main .objetivos .texto p {
         width: 100%;
         color: #615F7E;
         text-align: center;
-        font-size: 14px;
         line-height: 21px;
         letter-spacing: normal;
         margin-bottom: 32px;
@@ -124,7 +117,7 @@
         font-size: 12px;
         width: 100%;
         margin: auto;
-  
+
         & img {
             width: 12px;
         }
@@ -133,7 +126,6 @@
     main .objetivos .quote {
         width: 280px;
         height: 170px;
-        font-size: 10px;
         line-height: 18px;
         padding: 25px;
         margin: 40px auto 60px auto;
@@ -157,14 +149,6 @@
 
         & figcaption {
             margin-left: 3px;
-
-            & :first-child {
-                font-size: 9px;
-            }
-
-            & :last-child {
-                font-size: 6px;
-            }
         }
     }
 
@@ -189,13 +173,11 @@
     }
 
     main .submit .text h2 {
-        font-size: 18px;
         line-height: 24px;
         text-align: center;
     }
 
     main .submit .text p {
-        font-size: 14px;
         text-align: center;
     }
 
@@ -207,15 +189,10 @@
             height: 32px;
             padding-left: 8px;
 
-            &::placeholder {
-                font-size: 10px;
+            & .btn-bottom {
+                width: 240px;
+                height: 32px;
             }
-        }
-
-        & .btn-bottom {
-            width: 240px;
-            height: 32px;
-            font-size: 10px;
         }
     }
 
@@ -224,7 +201,6 @@
     footer {
         flex-direction: column;
         height: fit-content;
-        font-size: 16px;
         padding: 65px 40px;
     }
 
