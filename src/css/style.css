@@ -124,16 +124,11 @@ main .functions img {
 main .objetivos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background: url(../images/round-background-desktop.svg) no-repeat top;
     background-size: cover;
     gap: 30px;
-    /* flex-direction: row-reverse; */
-}
-
-main .objetivos .global{
-    order: 1;
 }
 
 main .objetivos .texto {
@@ -311,6 +306,10 @@ footer {
     font-weight: 400;
     font-size: 1.47rem;
     padding: 90px 80px;
+}
+
+footer .contato {
+    width: 300px;
 }
 
 footer .contato .logo {
