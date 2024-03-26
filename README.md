@@ -1,1 +1,1 @@
-# fylo-landin-page (em andamento)
+# fylo-landin-page
